@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> login form</h1>
+    {% if valid %}
+    <h1 style="color: red;"> invalid credntials </h1>
+    {% endif %}
+    <form method="POST" action="">
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="enter username"><br>
+        <input type="text" name="password" placeholder="enter ur password"><br>
+        <button> submit</button>
+    </form>
+    
+</body>
+</html>
